@@ -51,7 +51,7 @@ body {
     justify-content: space-around;
     flex-direction: column;
     word-wrap: break-word;
-    word-break: break all;
+    word-break: break-all;
     padding: .9rem;
     border: 1px solid rgba(121, 211, 199, .8);
     border-bottom: none;

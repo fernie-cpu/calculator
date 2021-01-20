@@ -32,22 +32,22 @@ class Calculator {
 
     compute() {
         let computation;
-        const prev = parseFloat(this.previousOperand)
-        const current = parseFloat(this.currentOperand)
-        if (isNaN(prev) || isNaN(current)) return
+        const prev = parseFloat(this.previousOperand);
+        const current = parseFloat(this.currentOperand);
+        if (isNaN(prev) || isNaN(current)) return;
         switch (this.operation) {
             case '+':
-                computation = prev + current
-                break
+                computation = prev + current;
+                break;
             case '-':
-                computation = prev - current
-                break
+                computation = prev - current;
+                break;
             case '*':
-                computation = prev * current
-                break
+                computation = prev * current;
+                break;
             case '÷':
-                computation = prev / current
-                break
+                computation = prev / current;
+                break;
             default:
                 return
         }
@@ -58,8 +58,8 @@ class Calculator {
 
     getDisplayNumber(number) {
         const stringNumber = number.toString();
-        const integerDigits = parseFloat(stringNumber.split('.')[0])
-        const decimalDigits = stringNumber.split('.')[1]
+        const integerDigits = parseFloat(stringNumber.split('.')[0]);
+        const decimalDigits = stringNumber.split('.')[1];
         let integerDisplay;
         if (isNaN(integerDigits)) {
             integerDisplay = ''
@@ -128,7 +128,7 @@ deleteButton.addEventListener('click', button => {
 const keyboard = (event) => {
     const keys = ['1', ,'2', '3', '4', '5', '6', '7', '8', '9', '0',
                 '.', '+', '-', '*', '/', 'x', 'X', '=',
-                'Enter', 'Backspace', 'Delete'
+                'Enter', 'Backspace', 'Delete', 'Escape'
     ]
     const key = event.key;
     if (!keys.includes(event.key)) {
@@ -140,11 +140,13 @@ const keyboard = (event) => {
                 calculator.updateDisplay();
                 break;
             case "Delete":
+            case "Escape":
                 calculator.clear();
                 calculator.updateDisplay();
                 break;
             case "Enter":
             case "=":
+                event.preventDefault();
                 calculator.compute('=');
                 calculator.updateDisplay();
                 break;
