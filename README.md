@@ -8,3 +8,12 @@ A bunch of stuff... phew! haha.
 I've learned how to work with `KeyboardEvent.key` and I think that's pretty cool.
 
 Man, I've built a calculator! :)
+
+## Have to fix
+
+A bunch of stu... just kidding haha
+- Floating point
+- Break line on the display or set a limit of characters
+
+## Someone said
+> You're almost there!
