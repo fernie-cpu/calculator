@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+
+    <section class="calculator-grid">
+        <div class="output">
+            <div data-previous-operand class="previous-operand"></div>
+            <div data-current-operand class="current-operand"></div>
+        </div>
+        <button data-key="8" data-all-clear class="span-two">AC</button>
+        <button data-key="27" data-delete>
+            <i class="material-icons">backspace</i>
+        </button>
+        <button data-key="111" data-operation class="operands">÷</button>
+        <button data-key="103" data-number>7</button>
+        <button data-key="104" data-number>8</button>
+        <button data-key="105" data-number>9</button>
+        <button data-key="106" data-operation class="operands">*</button>
+        <button data-key="100" data-number>4</button>
+        <button data-key="101" data-number>5</button>
+        <button data-key="102" data-number>6</button>
+        <button data-key="107" data-operation class="operands">+</button>
+        <button data-key="97" data-number>1</button>
+        <button data-key="98" data-number>2</button>
+        <button data-key="99" data-number>3</button>
+        <button data-key="109" data-operation class="operands">-</button>
+        <button data-key="96" class="span-two"  data-number>0</button>
+        <button data-key="110" data-number>.</button>
+        <button data-key="13" data-equals class="operands">=</button>
+    </section>
+
+    
+    <script src="app.js"></script>
+</body>
+</html>
