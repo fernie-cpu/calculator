@@ -9,11 +9,11 @@ I've learned how to work with `KeyboardEvent.key` and I think that's pretty cool
 
 Man, I've built a calculator! :)
 
-## Have to fix
+## Live Demo
 
-A bunch of stu... just kidding haha
-- Floating point
-- Break line on the display or set a limit of characters
+<a href="https://fernie-cpu.github.io/calculator/" target="_blank">Calculator</a>
+
+Not perfect but 2 + 2 is not 5. So I'd say it's kinda working.
 
 ## Someone said
-> You're almost there!
+> "You're almost there!"
