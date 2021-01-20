@@ -66,3 +66,29 @@ body {
     color: rgba(255, 255, 255);
     font-size: 2.3rem;
 }
+
+footer {
+    background: rgb(0, 121, 151);
+    position: absolute;
+    width: 100%;
+}
+
+footer p {
+    padding: 2rem;
+    font-size: 1.2rem;
+
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 3px black;
+}
+
+footer a {
+    text-decoration: none;
+    color:rgba(18, 49, 48, 0.75);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+footer a:hover {
+    color:rgb(18, 49, 48);
+    text-decoration: underline;
+}
